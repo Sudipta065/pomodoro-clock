@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+:root {
+  --color-primary: #018383;
+  --color-secondary: aqua;
+  --color-ter: #0f1126;
+  --color-head: #87ffd7;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Roboto Slab', serif;
+}
+/**/
+body {
+  background: linear-gradient(#0c99c1, #22b9ca);
+  color: white;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  font-size: 4rem;
+  color: var(--color-ter);
+  margin-top: 3rem;
+}
+
+.length-control {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  height: 40vh;
+  width: 50vw;
+  margin: 2rem 2rem;
+}
+
+.length-control-1,
+.length-control-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  padding: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom: 0.5rem solid var(--color-ter);
+}
+
+.btn-level,
+#start_stop,
+#reset {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #0c99c1;
+  border: 0;
+  padding: 1rem;
+  border-radius: 3rem;
+  transition: all 0.3s ease-out;
+}
+
+.btn-level:hover,
+#start_stop:hover,
+#reset:hover {
+  background-color: var(--color-ter);
+  color: #0c99c1;
+}
+
+#break-length,
+#break-label,
+#session-label,
+#session-length,
+.btn-con {
+  margin: 1rem 0;
+  font-size: 3rem;
+  color: var(--color-ter);
+}
+
+.timer-control {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+
+  background-color: var(--color-secondary);
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 0.5rem solid var(--color-ter);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  justify-self: center;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem 0;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ter);
+  font-size: 5.8rem;
+}
+@media only screen and (max-width: 105em) {
+  .length-control {
+    width: 80vw;
+  }
+  .timer-control {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 65em) {
+  .length-control {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 52em) {
+  .btn-level,
+  #start_stop,
+  #reset {
+    font-size: 1rem;
+  }
+  #break-length,
+  #break-label,
+  #session-label,
+  #session-length,
+  .btn-con {
+    font-size: 2rem;
+  }
+  .timer-wrapper {
+    font-size: 3rem;
+  }
+  header {
+    font-size: 2rem;
+  }
+
+  .timer-control {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 36em) {
+  #break-length,
+  #break-label,
+  #session-label,
+  #session-length,
+  .btn-con {
+    font-size: 1rem;
+  }
+  .timer-wrapper {
+    font-size: 2.5rem;
+  }
+
+  .length-control-1,
+  .length-control-2 {
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media only screen and (max-width: 28em) {
+  .timer-wrapper {
+    font-size: 2rem;
+  }
+
+  .length-control-1,
+  .length-control-2 {
+    padding: 0.2rem 0.2rem;
+  }
+
+  .btn-level,
+  #start_stop,
+  #reset {
+    font-size: 0.8rem;
+  }
+}

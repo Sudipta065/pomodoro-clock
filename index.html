@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <header>POMODORO CLOCK</header>
+  <body>
+    <div class="length-control">
+      <div class="length-control-1">
+        <div id="break-label">Break Length</div>
+        <div class="btn-con">
+          <button id="break-decrement" class="btn-level" value="-">
+            Decrease
+          </button>
+          <button id="break-increment" class="btn-level" value="+">
+            Increase
+          </button>
+        </div>
+
+        <div id="break-length" class="level">5:00</div>
+      </div>
+
+      <div class="length-control-2">
+        <div id="session-label">Session Length</div>
+        <div class="btn-con">
+          <button id="session-decrement" class="btn-level" value="-">
+            Decrease
+          </button>
+
+          <button id="session-increment" class="btn-level" value="+">
+            Increase
+          </button>
+        </div>
+        <div id="session-length" class="level">25:00</div>
+      </div>
+    </div>
+
+    <div class="timer-control">
+      <div class="timer-wrapper">
+        <div id="timer-label">Session Time</div>
+        <div id="time-left">25:00</div>
+      </div>
+
+      <div class="timer-btn">
+        <button id="start_stop">
+          Play/Pause
+        </button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
